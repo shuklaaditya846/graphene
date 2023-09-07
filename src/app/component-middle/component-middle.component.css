@@ -1,0 +1,204 @@
+.rectangle {
+  width: 100%;
+  max-width: 1440px;
+  /* height: 100vh; */
+  height: 749px;
+  padding: 2% 0% 2% 2%;
+  color: black;
+  overflow-x: hidden;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-right: 100px;
+  height: unset;
+}
+
+#heading > svg {
+  position: unset;
+  bottom: unset;
+}
+
+.newprodsubtitle {
+  font-size: 90px;
+  font-family: "Syne-Semibold";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 108px;
+  color: #000000;
+}
+
+div#arrows {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+div#carousel {
+  display: flex;
+  flex-direction: row;
+  position: unset;
+}
+
+/*  */
+
+div#selector {
+  padding: 10px 50px 10px 0px;
+  text-transform: capitalize;
+  min-width: 280px;
+}
+
+li {
+  font-size: 18px;
+  list-style-type: none;
+  padding: 12px 0px;
+}
+
+.selected {
+  font-size: 26px;
+}
+
+.selector ul li {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.selector ul li.selected {
+  /* background-color: #007bff; */
+  /* color: #fff; */
+}
+
+/*  */
+
+.horizontal-scroll-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+div#items {
+  overflow: auto;
+}
+
+.scroll-content {
+  display: inline-block;
+  /* overflow-x: auto; */
+}
+
+.item {
+  display: inline-block;
+  margin-right: 26px;
+  height: 460px;
+  width: 310px;
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 10px;
+}
+
+.image-holder {
+  position: relative;
+  height: 322px;
+  width: 310px;
+  padding: 4px;
+}
+
+.goto {
+  height: 45px;
+  width: 45px;
+  background: #242424;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+img.product-image {
+  width: 306px;
+  height: 318px;
+}
+
+.prod-detail {
+  height: 126px;
+  width: 310px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-title {
+  font-size: 18px;
+  text-wrap: balance;
+  padding: 0px 10px 0px 0px;
+  font-family: "Syne-Regular";
+  text-transform: uppercase;
+}
+
+.product-description {
+  font-size: 14px;
+  text-wrap: balance;
+  height: 50px;
+  overflow: clip;
+}
+
+.product-price {
+  font-size: 18px;
+  text-wrap: balance;
+  padding: 6px 0px;
+  font-family: "Syne-Semibold";
+  text-transform: uppercase;
+}
+
+/* iphone 14 */
+@media only screen and (max-width: 391px) {
+  .newprodsubtitle {
+    width: 287px;
+    height: 50px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 125.6%;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: unset;
+    height: 682px;
+  }
+
+  #heading > svg {
+    position: relative;
+    bottom: 640px;
+  }
+
+  div#carousel {
+    flex-direction: column;
+    position: absolute;
+    bottom: -640px;
+    width: 376px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    overflow-x: scroll;
+  }
+
+  div#selector {
+    padding: 10px;
+  }
+
+  li {
+    min-width: max-content;
+    display: flex;
+    align-items: center;
+  }
+}

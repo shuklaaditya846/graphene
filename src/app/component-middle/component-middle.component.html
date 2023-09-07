@@ -1,0 +1,61 @@
+<div class="rectangle" id="rectangle">
+    <div class="heading" id="heading">
+        <div class="row">
+            <h2 class="newprodsubtitle">New products</h2>
+            <div class="arrows" id="arrows">
+                <svg width="56" height="6" viewBox="0 0 56 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M55 3.5H55.5V2.5H55V3.5ZM0 3L5 5.88675V0.113249L0 3ZM55 2.5L4.5 2.5V3.5L55 3.5V2.5Z"
+                        fill="#161615" />
+                </svg>
+                <svg width="56" height="6" viewBox="0 0 56 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 2.5H0.5L0.5 3.5H1L1 2.5ZM56 3L51 0.113249V5.88675L56 3ZM1 3.5L51.5 3.5V2.5L1 2.5L1 3.5Z"
+                        fill="#161615" />
+                </svg>
+            </div>
+        </div>
+        <svg width="659" height="22" viewBox="0 0 659 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="11" y1="10.5" x2="659" y2="10.4999" stroke="#161615" />
+            <path d="M11 0L12.789 9.21102L22 11L12.789 12.789L11 22L9.21102 12.789L0 11L9.21102 9.21102L11 0Z"
+                fill="black" />
+        </svg>
+    </div>
+    <div class="carousel" id="carousel">
+        <div class="selector" id="selector">
+            <ul>
+                <li *ngFor="let category of categories" [class.selected]="category === selectedCategory"
+                    (click)="selectCategory(category)">
+                    {{ category }}
+                </li>
+            </ul>
+        </div>
+
+        <div class="items" id="items">
+            <div class="horizontal-scroll-container">
+                <div class="scroll-content">
+                    <div *ngIf="filteredProducts.length === 0">
+                        No products found for the selected category.
+                    </div>
+                    <div class="item" *ngFor="let product of filteredProducts">
+                        <div class="image-holder">
+                            <img [src]="product.image" alt="{{ product.title }}" class="product-image">
+                            <div class="goto">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.9959 14.1648C14.9995 9.04274 14.9811 4.55893 15 0C9.88192 0.00362171 5.38585 0.0186258 0.834743 0.00413906C0.829052 1.36175 0.827241 2.40115 0.822067 3.72181C3.50425 3.72879 6.31499 3.72181 8.64345 3.72206L0.306822 12.0585C-0.104248 12.4698 -0.101923 13.2202 0.311738 13.6341L1.36567 14.688C1.77959 15.1019 2.53034 15.1043 2.94141 14.6932L11.278 6.35683C11.2744 8.96133 11.2817 11.5655 11.2703 14.17C12.5249 14.1631 13.8909 14.1692 14.9959 14.1648Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="prod-detail">
+                            <h3 class="product-title">{{ product.title }}</h3>
+                            <p class="product-description">{{ product.description }}</p>
+                            <p class="product-price">{{ product.price | currency }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

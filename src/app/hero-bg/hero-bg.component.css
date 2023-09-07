@@ -1,0 +1,106 @@
+.main {
+  height: 749px;
+  width: 1440px;
+  background-color: transparent;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  /* cogwheel image */
+  /* background-image: url('../../assets/svgs/Star 3.svg');
+    background-repeat: no-repeat;
+    background-position: 1010px 129px; */
+
+  /* dude image */
+  /* background-image: url('../../assets/png/jessica-radanavong-IchPBHFD0pw-unsplash.png');
+    background-repeat: no-repeat;
+    background-position: 899px 133px; */
+
+  background: url("../../assets/svgs/Star 3.svg") no-repeat 1010px 129px,
+    /* cogwheel image */
+      url("../../assets/png/jessica-radanavong-IchPBHFD0pw-unsplash.png")
+      /* dude image */ no-repeat 899px 133px;
+
+  background-size: auto, auto;
+  background-blend-mode: color-burn;
+
+  z-index: 9;
+}
+
+.orange-box {
+  position: absolute;
+  width: 993px;
+  height: 354.3px;
+  left: 447px;
+  top: 344.62px;
+  background: #f07e15;
+  z-index: 8;
+}
+
+.orange-box-light {
+  position: absolute;
+  width: 993px;
+  height: 354.3px;
+  left: 448px;
+  top: 344.62px;
+  /* background: #F07E15; */
+  background-color: rgba(240, 126, 21, 0.2);
+  /* opacity: 0.2; */
+  z-index: 10;
+}
+
+.orange-box-light {
+  /* display: flex;
+  justify-content: flex-end;
+  align-items: end; */
+}
+
+p {
+  position: absolute;
+  width: 123px;
+  height: 16.2px;
+  left: 1296px;
+  top: 614.9px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #161615;
+  z-index: 20;
+  display: unset;
+}
+
+/* iphone 14 */
+@media only screen and (max-width: 391px) {
+  .main {
+    height: 791px;
+    width: 390px;
+    background-color: transparent;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: url("../../assets/svgs/Star 3.svg") no-repeat 155px 121px,
+      url("../../assets/png/jessica-radanavong-IchPBHFD0pw-unsplash.png")
+        no-repeat 60px 124px;
+    background-size: auto, auto;
+    background-blend-mode: color-burn;
+    z-index: 9;
+  }
+
+  .orange-box {
+    width: 390px;
+    height: 324.3px;
+    left: unset;
+  }
+
+  .orange-box-light {
+    width: 390px;
+    height: 324.3px;
+    left: unset;
+  }
+
+  p{
+    display: none;
+  }
+}

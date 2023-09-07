@@ -1,0 +1,29 @@
+.main-container {
+  width: 100%;
+  max-width: 1440px;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main-container > * {
+  width: 100%;
+}
+
+app-component-top {
+  background-color: black;
+  background-image: url("../assets/png/Rectangle.png");
+  background-repeat: repeat;
+}
+
+/* iphone 14 */
+/* @media only screen and (max-width: 391px) {
+  app-component-middle {
+    margin: 10px 0px;
+    height: 741px;
+    position: absolute;
+    top: 782px;
+  }
+} */

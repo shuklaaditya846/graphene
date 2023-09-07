@@ -1,0 +1,138 @@
+.more {
+  align-self: flex-start;
+}
+
+.hero,
+.more {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: unset;
+}
+
+.hero > h1 {
+  /* position: absolute; */
+  /* box-sizing: border-box;
+  width: 689px;
+  height: 151px;
+  left: 115px;
+  top: 280px;
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 135px;
+  line-height: 103px;
+  color: #ffffff; */
+  /* border: 1px solid #FFFFFF; */
+}
+
+#hero > h1:nth-child(2) {
+  /* margin-left: 200px;
+  padding-left: 100px; */
+  -webkit-text-stroke: 1px;
+  -webkit-text-fill-color: transparent;
+}
+
+div#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.hero > svg {
+  position: relative;
+  left: -30px;
+  top: 240px;
+}
+
+/* copy-pasted */
+#hero > h1:nth-child(1) {
+  box-sizing: border-box;
+  position: absolute;
+  width: 689px;
+  height: 151px;
+  left: 115px;
+  top: 280px;
+  font-family: "Syne-Extrabold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 135px;
+  line-height: 103px;
+  color: #ffffff;
+}
+
+#hero > h1:nth-child(2) {
+  box-sizing: border-box;
+  position: absolute;
+  width: 710px;
+  height: 144px;
+  left: 424px;
+  top: 396px;
+  font-family: "Syne-Extrabold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 135px;
+  line-height: 103px;
+}
+
+#hero > h1:nth-child(3) {
+  box-sizing: border-box;
+  position: absolute;
+  width: 527px;
+  height: 103px;
+  left: 187px;
+  top: 505px;
+  font-family: "Syne-Extrabold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 135px;
+  line-height: 103px;
+  color: #ffffff;
+}
+
+/* iphone 14 */
+@media only screen and (max-width: 391px) {
+  #hero > h1:nth-child(1) {
+    width: 248px;
+    height: 69px;
+    left: 15px;
+    top: 420px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 125.6%;
+  }
+
+  #hero > h1:nth-child(2) {
+    width: 225px;
+    height: 69px;
+    left: 98px;
+    top: 468px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 125.6%;
+  }
+
+  #hero > h1:nth-child(3) {
+    width: 215px;
+    height: 69px;
+    left: 41px;
+    top: 520px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 125.6%;
+  }
+
+  #hero > svg{
+    left: -210%;
+  }
+
+  .hero, .more{
+    padding: 16px;
+  }
+}

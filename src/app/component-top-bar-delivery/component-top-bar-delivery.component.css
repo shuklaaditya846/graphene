@@ -1,0 +1,61 @@
+.container {
+  height: 42px;
+  width: -webkit-fill-available;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+div#left,
+div#right {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+div#social {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+
+svg {
+  height: 14px;
+  width: 14px;
+}
+
+.container > * {
+  color: #666666;
+}
+
+/* iphone 14 */
+@media only screen and (max-width: 391px) {
+  .container {
+    width: 390px;
+    height: 42px;
+    background: #1a1a1a;
+    padding: 16px;
+    font-size: 12px;
+  }
+
+  div#left[_ngcontent-sfs-c49],
+  div#right[_ngcontent-sfs-c49] {
+    gap: 14px;
+  }
+
+  svg {
+    height: unset;
+    width: unset;
+  }
+
+  span > svg {
+    height: 8px !important;
+    width: 8px !important;
+  }
+
+  .truck {
+    height: 21px !important;
+    width: 21px !important;
+  }
+}

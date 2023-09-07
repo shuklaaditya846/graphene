@@ -1,0 +1,89 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+app-root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: -webkit-fill-available;
+  min-width: 1440px;
+  height: max-content;
+  flex-direction: column;
+}
+
+app-root > * {
+  width: -webkit-fill-available;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Syne-Bold */
+@font-face {
+  font-family: "Syne-Bold";
+  src: url("../src/assets/font/Syne-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Syne-ExtraBold */
+@font-face {
+  font-family: "Syne-ExtraBold";
+  src: url("../src/assets/font/Syne-ExtraBold.ttf") format("truetype");
+  font-weight: 800; /* Adjust the font-weight as needed */
+  font-style: normal;
+}
+
+/* Syne-Medium */
+@font-face {
+  font-family: "Syne-Medium";
+  src: url("../src/assets/font/Syne-Medium.ttf") format("truetype");
+  font-weight: 500; /* Adjust the font-weight as needed */
+  font-style: normal;
+}
+
+/* Syne-Regular */
+@font-face {
+  font-family: "Syne-Regular";
+  src: url("../src/assets/font/Syne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Syne-SemiBold */
+@font-face {
+  font-family: "Syne-SemiBold";
+  src: url("../src/assets/font/Syne-SemiBold.ttf") format("truetype");
+  font-weight: 600; /* Adjust the font-weight as needed */
+  font-style: normal;
+}
+
+/* Apply the fonts globally */
+body {
+  font-family: "Syne-Regular", sans-serif; /* Use the desired default font */
+}
+
+
+/* iphone 14 */
+@media only screen and (max-width: 391px) {
+  app-root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: -webkit-fill-available; */
+    min-width: 390px;
+    height: max-content;
+    flex-direction: column;
+  }
+
+  app-root > * {
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
